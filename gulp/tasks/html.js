@@ -1,8 +1,9 @@
-import gulp from 'gulp';
 import fileInclude from 'gulp-file-include';
+import browserSync from 'browser-sync';
 
 export const html = () => {
-  return gulp.src('./src/**/*.html')
+  return app.gulp.src('./src/index.html')
   .pipe(fileInclude())
-  .pipe(gulp.dest('./dist'))
+  .pipe(app.gulp.dest('./dist'))
+  .pipe(browserSync.stream())
 };

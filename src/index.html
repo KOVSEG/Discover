@@ -1,9 +1,14 @@
-@@include('./html/head.html', {
-  'title': 'Discover'
-})
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/head.html', {
+    'title': 'Discover'
+  })
   <body>
     @@include('./html/header.html')
-
+    <div class="main__inner">
+      <img src="./images/background/bg-image.jpg" alt="">
+      Тут информация о сайте, основной контент.
+    </div>
     @@include('./html/footer.html')
   </body>
 </html>

@@ -1,6 +1,4 @@
-import gulp from 'gulp';
-
 export const copy = () => {
-  return gulp.src('./src/index.html')
-  .pipe(gulp.dest('./dist'))
+  return app.gulp.src('./src/index.html')
+  .pipe(app.gulp.dest('./dist'))
 };
