@@ -1,0 +1,24 @@
+{
+  "name": "discover",
+  "version": "1.0.0",
+  "description": "Created for practice with gulp",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KOVSEG/Discover.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KOVSEG/Discover/issues"
+  },
+  "homepage": "https://github.com/KOVSEG/Discover#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  }
+}
