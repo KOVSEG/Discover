@@ -7,4 +7,7 @@ body {
 
 .main__intro {
   background: url('@img/background/bg-image.jpg') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }

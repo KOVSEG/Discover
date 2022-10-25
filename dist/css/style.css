@@ -1,1 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400; 600;700&display=swap');body{font-family:"Open Sans",sans-serif;font-weight:400}.main__intro{background:url(../imgbackground/bg-image.jpg) center no-repeat}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.main__intro {
+  background: url("../img/background/bg-image.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
