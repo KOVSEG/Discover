@@ -10,8 +10,9 @@ import { copy } from './gulp/tasks/copy.js';
 import { html } from './gulp/tasks/html.js';
 import { browsersync } from './gulp/tasks/browsersync.js';
 import { reset } from './gulp/tasks/reset.js';
+import { scss } from './gulp/tasks/scss.js';
 
-const dev = gulp.series(reset, gulp.parallel(copy, html), browsersync );
+const dev = gulp.series(reset, gulp.parallel(copy, html, scss), browsersync );
 
 gulp.task('default', dev);
 
