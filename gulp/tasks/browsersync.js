@@ -1,7 +1,6 @@
-import browserSync from 'browser-sync';
 
 export const browsersync = () => {
-  browserSync.init({
+  app.plugins.browsersync.init({
     server: {
       baseDir: './dist',
     },

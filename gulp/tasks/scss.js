@@ -3,13 +3,12 @@ import replace from 'gulp-replace';
 import dartSass from 'sass';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
-import rename from 'gulp-rename';
 
 const sass = gulpSass(dartSass);
 
 export const scss = () => {
   return app.gulp.src('./src/scss/**/*.scss', { sourcemaps: true })
-  .pipe(replace(/@img\//g, '../img/'))
+  .pipe(app.plugins.replace(/@img\//g, '../img/'))
   .pipe(sass({
     outputStyle: 'expanded',
   }))
@@ -19,7 +18,7 @@ export const scss = () => {
   }
   ))
   // .pipe(cleanCSS())
-  .pipe(rename({
+  .pipe(app.plugins.rename({
     extname: '.css',
   }))
   .pipe(app.gulp.dest('./dist/css'));
