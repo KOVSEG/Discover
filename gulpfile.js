@@ -19,7 +19,7 @@ import { images } from './gulp/tasks/images.js';
 // Gulp watch
 function wathcer() {
   gulp.watch('./src/index.html', copy);
-  gulp.watch('./src/index.html', html);
+  gulp.watch('./src/**/*.html', html);
   gulp.watch('./src/scss/**/*.scss', scss);
   gulp.watch('./src/img/**/*.*', images);
 };

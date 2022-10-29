@@ -4,11 +4,134 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+// Header
+.header {
+  position: absolute;
+  width: 100%;
 
+  .header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 66px 85px 0;
+
+    .header__title {
+      font-size: 24px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .header__nav {
+      .header__link {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+      }
+
+        .link-about {
+          margin: 0 50px 0;
+        }
+    }
+
+    .header__finder {
+      margin-left: 17px;
+      font-size: 17px;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+// Aside
+.aside__left {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 18%;
+  left: 4%;
+
+  .aside__left-follow {
+    writing-mode: vertical-lr;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 22px;
+  }
+
+  .aside__left-icons {
+    display: inherit;
+    flex-direction: column;
+
+    .link-twitter {
+      margin: 25px 0;
+    }
+  }
+}
+
+// Main
 .main__intro {
+  display: flex;
   background: url('@img/background/bg-image.jpg') center no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
-}
+  justify-content: center;
 
+  .main__inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+
+    .main__upper {
+      margin-bottom: 32px;
+      display: flex;
+
+      .main__upper-line {
+        content: "";
+        align-self: center;
+        margin-right: 32px;
+        background: #FFC178;
+        width: 72px;
+        height: 2px;
+      }
+
+      .main__upper-explore {
+        font-size: 18px;
+        font-weight: 700;
+        color: rgba(255, 193, 120, 1);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        line-height: 25px;
+      }
+    }
+
+    .main__title {
+      margin-bottom: 126px;
+
+      .main__title-discover{
+        font-size: 96px;
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 100px;
+      }
+  
+      .main__title-wonder {
+        font-size: 88px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 100px;
+      }
+    }
+
+    .main__scroll {
+      text-align: center;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+
+      .main__scroll-image {
+        vertical-align: bottom;
+        margin-left: 9px;
+      }
+    }
+  }
+}
