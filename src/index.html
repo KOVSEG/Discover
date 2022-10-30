@@ -7,6 +7,7 @@
   <body>
     @@include('./html/header.html')
 
+    <!-- Aside -->
     <aside class="aside__left">
       <div class="aside__left-follow">
         Follow us
@@ -18,20 +19,21 @@
       </div>
     </aside>
 
+    <!-- Main -->
     <div class="main__intro">
       <div class="main__inner">
         <div class="main__upper">
-          <div class="main__upper-line"></div>
-          <div class="main__upper-explore">
+          <div class="main__line block__line"></div>
+          <div class="main__title block__title">
             Explore the nature beauty
           </div>
         </div>
 
-        <div class="main__title">
-          <div class="main__title-discover">
+        <div class="main__text">
+          <div class="main__text-discover">
             Discover
           </div>
-          <div class="main__title-wonder">
+          <div class="main__text-wonder">
             Wonderful Indonesia
           </div>
         </div>
@@ -39,8 +41,45 @@
         <div class="main__scroll">
           <a class="main__scroll-link" href="#"><span class="main__scroll-down">Scroll down</span><img class="main__scroll-image" src="@img/maincontent/icons/navigation/arrow24px.png" alt="arrow"></a>
         </div>
-      </div>
-    </div>
+      </div> <!-- /main__inner -->
+    </div> <!-- /main__intro -->
+
+    <!-- Enjoy -->
+    <section class="section">
+      <div class="container">
+        <div class="enjoy">
+
+          <div class="enjoy__image">
+            <img class="enjoy__img" src="@img/maincontent/enjoy/enjoy-1.jpg" alt="Image">
+          </div>
+
+          <div class="enjoy__content">
+            <div class="enjoy__upper">
+              <div class="enjoy__line block__line"></div>
+              <div class="enjoy__title block__title">
+                East nusa tenggara
+              </div>
+            </div>
+            <div class="enjoy__text block__text">Have you
+              enjoyed your
+              holiday?
+            </div>
+            <div class="enjoy__subtext block__subtext">
+              You will be amazed if you take part in this sailing Komodo island tour 
+              package. So it is also mandatory for you, besides enjoying Komodo 
+              tourism on Komodo Island, you also have to taste the marine tourism.
+              The beautiful waters of Komodo will make you meet many travelers
+              from other countries.
+            </div>
+
+            <div class="link__arrow">
+              <!-- <a href="#">read more <img src="#" alt="arrow"></a> -->
+            </div>
+          </div> <!-- /enjoy__content -->
+
+        </div> <!-- /enjoy -->
+      </div> <!-- /container -->
+    </section>
 
     @@include('./html/footer.html')
   </body>
